@@ -1,4 +1,12 @@
-﻿  pointer.cpp
-C:\Users\alodi\OneDrive\문서\KYS\2.STUDY\1.UNIVERSITY\wk\git\UNIV_Data-Structure\Data_Structure\201910936 김연수\201910936\pointer.cpp(142,1): warning C4715: '`pointer'::`45'::<lambda_2>::operator()': not all control paths return a value
-C:\Users\alodi\OneDrive\문서\KYS\2.STUDY\1.UNIVERSITY\wk\git\UNIV_Data-Structure\Data_Structure\201910936 김연수\201910936\pointer.cpp(165,1): warning C4715: '`pointer'::`53'::<lambda_3>::operator()': not all control paths return a value
+﻿  week3.c
+C:\Users\alodi\OneDrive\문서\KYS\2.STUDY\1.UNIVERSITY\wk\git\UNIV_Data-Structure\Data_Structure\201910936 김연수\201910936\week3.c(75,21): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'char **'
+      C:\Users\alodi\OneDrive\문서\KYS\2.STUDY\1.UNIVERSITY\wk\git\UNIV_Data-Structure\Data_Structure\201910936 김연수\201910936\week3.c(75,21):
+      this argument is used by a conversion specifier
+  
+C:\Users\alodi\OneDrive\문서\KYS\2.STUDY\1.UNIVERSITY\wk\git\UNIV_Data-Structure\Data_Structure\201910936 김연수\201910936\week3.c(86,16): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+      C:\Users\alodi\OneDrive\문서\KYS\2.STUDY\1.UNIVERSITY\wk\git\UNIV_Data-Structure\Data_Structure\201910936 김연수\201910936\week3.c(86,16):
+      consider using '%zd' in the format string
+  
+  week2.c
+  Generating Code...
   201910936.vcxproj -> C:\Users\alodi\OneDrive\문서\KYS\2.STUDY\1.UNIVERSITY\wk\git\UNIV_Data-Structure\Data_Structure\201910936 김연수\201910936\x64\Debug\201910936.exe

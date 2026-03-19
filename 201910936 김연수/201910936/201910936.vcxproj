@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="pointer.cpp" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="week3.c" />
+    <ClCompile Include="week2.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pointer.hpp" />
+    <ClInclude Include="week2.h" />
+    <ClInclude Include="week3.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>

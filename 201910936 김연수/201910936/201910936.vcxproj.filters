@@ -15,15 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pointer.cpp">
+    <ClCompile Include="week2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="week3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pointer.hpp">
+    <ClInclude Include="week3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="week2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
