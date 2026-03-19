@@ -13,7 +13,7 @@ auto pointer() -> void
 
     auto hasKey = [&key]() -> const bool
         {
-            return (key >= 1 && key <= 4);
+            return (key >= 1 && key <= 5);
         };
 
     while (!hasKey())
@@ -57,6 +57,10 @@ auto pointer() -> void
         std::cin >> inputString;
 
         std::cout << "\nString Size : " << inputString.size();
+
+        char cacheChar = {};
+        char* inputChar = &cacheChar;
+
     }
         break;
 
@@ -96,6 +100,57 @@ auto pointer() -> void
             x_in++;
         }
     }
+    break;
+    case 5:
+    {
+        std::string inputArray[2][3]{};
+
+        int x_in = 1;
+        for (auto& x : inputArray)
+        {
+            int y_in = 1;
+            for (auto& y : x)
+            {
+                auto printIndex = [&y_in]() -> const std::string
+                    {
+                        switch (y_in)
+                        {
+                        case 1: return "name";
+                        case 2: return "major";
+                        case 3: return "id";
+                        }
+                    };
+
+                std::cout << "Student #" << x_in << "'s " << printIndex() << "\t: ";
+                std::cin >> y;
+                y_in++;
+            }
+            x_in++;
+        }
+
+        x_in = 1;
+        for (auto& x : inputArray)
+        {
+            int y_in = 1;
+            for (auto& y : x)
+            {
+                auto printIndex = [&y_in]() -> const std::string
+                    {
+                        switch (y_in)
+                        {
+                        case 1: return "name";
+                        case 2: return "major";
+                        case 3: return "id";
+                        }
+                    };
+
+                std::cout << "Student #" << x_in << "'s " << printIndex() << "\t: " << y << "\n";
+                y_in++;
+            }
+            x_in++;
+        }
+    }
+    break;
 
     default:
         std::cout << "Wrong Key Number";
