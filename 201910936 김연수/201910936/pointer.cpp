@@ -5,63 +5,103 @@
 
 auto pointer() -> void
 {
-    //int pointedInt = 100;
-    //int* pointerInt = &pointedInt;
+    std::cout << "Exercise Week 3\n"
+        << "Enter Exercise Number : ";
+    
+    auto key = -1;
+    std::cin >> key;
 
-    //std::cout << "Pointed : " << *pointerInt << "\tAddress : " << &pointerInt;
-    //
-    //char pointedChar[3][10] = { "Dreams", "Come", "True!" };
-    //const char* pointerChar[3] = { {"Dreams"}, {"Come"}, {"True!"} };
-
-    //char* cacheChar[4] = {};
-
-    //for (auto i = 0; i < 4; i++)
-    //{
-    //    char cache{};
-    //    std::cout << "#" << i+1 << "\t: ";
-    //    std::cin >> cache;
-    //    cacheChar[i] = &cache;
-    //    std::cout << "\n";
-    //}
-
-    //std::string inputString = {};
-    //std::cout << "Enter String : ";
-    //std::cin >> inputString;
-
-    //std::cout << "\nString Size : "  << inputString.size();
-
-    int array[2][3][4]{};
-
-    int maximum = 2 * 3 * 4;
-
-    int current = 1;
-    for (auto& first : array)
-    {
-        for (auto& second : first)
+    auto hasKey = [&key]() -> const bool
         {
-            for (auto& third : second)
+            return (key >= 1 && key <= 4);
+        };
+
+    while (!hasKey())
+    {
+        std::cout << "Wrong Key! Enter Again : ";
+        std::cin >> key;
+    }
+
+    switch (key)
+    {
+    case 1:
+    {
+        int pointedInt = 100;
+        int* pointerInt = &pointedInt;
+
+        std::cout << "Pointed : " << *pointerInt << "\tAddress : " << &pointerInt;
+    }
+        break;
+    case 2:
+    {
+        char pointedChar[3][10] = { "Dreams", "Come", "True!" };
+        const char* pointerChar[3] = { {"Dreams"}, {"Come"}, {"True!"} };
+
+        char* cacheChar[4] = {};
+
+        for (auto i = 0; i < 4; i++)
+        {
+            char cache{};
+            std::cout << "#" << i + 1 << "\t: ";
+            std::cin >> cache;
+            cacheChar[i] = &cache;
+            std::cout << "\n";
+        }
+    }
+        break;
+
+    case 3:
+    {
+        std::string inputString = {};
+        std::cout << "Enter String : ";
+        std::cin >> inputString;
+
+        std::cout << "\nString Size : " << inputString.size();
+    }
+        break;
+
+    case 4:
+    {
+        int array[2][3][4]{};
+
+        int current = 1;
+        int maximum = 2 * 3 * 4;
+
+        for (auto& first : array)
+        {
+            for (auto& second : first)
             {
-                std::cout << "Enter Input (" << current++ << "/" <<  maximum << ")\t: ";
-                std::cin >> third;
+                for (auto& third : second)
+                {
+                    std::cout << "Enter Input (" << current++ << "/" << maximum << ")\t: ";
+                    std::cin >> third;
+                }
             }
+        }
+
+        int x_in = 0;
+        for (auto& x : array)
+        {
+            int y_in = 0;
+            for (auto& y : x)
+            {
+                int z_in = 0;
+                for (auto& z : y)
+                {
+                    std::cout << "array[" << x_in << "][" << y_in << "][" << z_in << "]\t: " << z << "\n";
+                    z_in++;
+                }
+                y_in++;
+            }
+            x_in++;
         }
     }
 
-    int x_in = 0;
-    for (auto& x : array)
-    {
-        int y_in = 0;
-        for (auto& y : x)
-        {
-            int z_in = 0;
-            for (auto& z : y)
-            {
-                std::cout << "array[" << x_in << "][" << y_in << "][" << z_in << "]\t: " << z << "\n";
-                z_in++;
-            }
-            y_in++;
-        }
-        x_in++;
+    default:
+        std::cout << "Wrong Key Number";
+        break;
+
     }
 
+    
 }
