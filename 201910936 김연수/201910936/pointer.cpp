@@ -3,17 +3,35 @@
 #include <iostream>
 #include <string>
 
+constexpr int WEEK3_START   = 1;
+constexpr int WEEK3_END     = 7;
+
+// forward declare
+auto factorial(int val) -> int;
+
 auto pointer() -> void
 {
-    std::cout << "Exercise Week 3\n"
+    std::cout 
+        << "Exercise Week 3\n\n"
+
+        << "============================\n"
+        << "#1 : Integer Pointer\n"
+        << "#2 : Char Pointer\n"
+        << "#3 : String Size\n"
+        << "#4 : Multi-Dimensional Array\n"
+        << "#5 : Student Array\n"
+        << "#6 : Struct Definition\n"
+        << "#7 : Factorial Function\n"
+        << "============================\n\n"
+
         << "Enter Exercise Number : ";
     
-    auto key = -1;
+    int key = -1;
     std::cin >> key;
 
     auto hasKey = [&key]() -> const bool
         {
-            return (key >= 1 && key <= 5);
+            return (key >= WEEK3_START && key <= WEEK3_END);
         };
 
     while (!hasKey())
@@ -32,6 +50,7 @@ auto pointer() -> void
         std::cout << "Pointed : " << *pointerInt << "\tAddress : " << &pointerInt;
     }
         break;
+    
     case 2:
     {
         char pointedChar[3][10] = { "Dreams", "Come", "True!" };
@@ -100,7 +119,8 @@ auto pointer() -> void
             x_in++;
         }
     }
-    break;
+        break;
+    
     case 5:
     {
         std::string inputArray[2][3]{};
@@ -117,7 +137,7 @@ auto pointer() -> void
                         {
                         case 1: return "name";
                         case 2: return "major";
-                        case 3: return "id";
+                        case 3: return "student id";
                         }
                     };
 
@@ -140,7 +160,7 @@ auto pointer() -> void
                         {
                         case 1: return "name";
                         case 2: return "major";
-                        case 3: return "id";
+                        case 3: return "student id";
                         }
                     };
 
@@ -152,6 +172,31 @@ auto pointer() -> void
     }
     break;
 
+    case 6:
+    {
+        struct employee {
+            char name[10];
+            int year;
+            int pay;
+        };
+
+        struct employee slave {"poor-guy", 100, 2000000 };
+    }
+    break;
+
+    case 7:
+    {
+        int value{};
+        std::cout << "Enter Input : ";
+        std::cin >> value;
+
+        auto result = factorial(value);
+
+        std::cout << "Factorial " << value << " : " << result << "\n";
+    }
+
+    break;
+
     default:
         std::cout << "Wrong Key Number";
         break;
@@ -159,4 +204,17 @@ auto pointer() -> void
     }
 
     
+}
+
+auto factorial(int val) -> int
+{
+    std::cout << "Factorial(" << val << ") Called !\n";
+    if (val == 1)
+    {
+        return val;
+    }
+    else
+    {
+        return val * factorial(val-1);
+    }
 }
