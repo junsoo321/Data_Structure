@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\alodi\\OneDrive\\\uBB38\uC11C\\KYS\\2.STUDY\\1.UNIVERSITY\\wk\\git\\UNIV_Data-Structure\\Data_Structure\\201910936 \uAE40\uC5F0\uC218\\201910936\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{49A00EBE-E146-418E-BF24-21E8DD3CAFCE}|201910936.vcxproj|C:\\Users\\alodi\\OneDrive\\\uBB38\uC11C\\KYS\\2.STUDY\\1.UNIVERSITY\\wk\\git\\UNIV_Data-Structure\\Data_Structure\\201910936 \uAE40\uC5F0\uC218\\201910936\\pointer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49A00EBE-E146-418E-BF24-21E8DD3CAFCE}|201910936.vcxproj|solutionrelative:pointer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{49A00EBE-E146-418E-BF24-21E8DD3CAFCE}|201910936.vcxproj|C:\\Users\\alodi\\OneDrive\\\uBB38\uC11C\\KYS\\2.STUDY\\1.UNIVERSITY\\wk\\git\\UNIV_Data-Structure\\Data_Structure\\201910936 \uAE40\uC5F0\uC218\\201910936\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{49A00EBE-E146-418E-BF24-21E8DD3CAFCE}|201910936.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49A00EBE-E146-418E-BF24-21E8DD3CAFCE}|201910936.vcxproj|C:\\Users\\alodi\\OneDrive\\\uBB38\uC11C\\KYS\\2.STUDY\\1.UNIVERSITY\\wk\\git\\UNIV_Data-Structure\\Data_Structure\\201910936 \uAE40\uC5F0\uC218\\201910936\\pointer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49A00EBE-E146-418E-BF24-21E8DD3CAFCE}|201910936.vcxproj|solutionrelative:pointer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pointer.hpp",
+              "DocumentMoniker": "C:\\Users\\alodi\\OneDrive\\\uBB38\uC11C\\KYS\\2.STUDY\\1.UNIVERSITY\\wk\\git\\UNIV_Data-Structure\\Data_Structure\\201910936 \uAE40\uC5F0\uC218\\201910936\\pointer.hpp",
+              "RelativeDocumentMoniker": "pointer.hpp",
+              "ToolTip": "C:\\Users\\alodi\\OneDrive\\\uBB38\uC11C\\KYS\\2.STUDY\\1.UNIVERSITY\\wk\\git\\UNIV_Data-Structure\\Data_Structure\\201910936 \uAE40\uC5F0\uC218\\201910936\\pointer.hpp",
+              "RelativeToolTip": "pointer.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-19T00:11:55.296Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "pointer.cpp",
+              "DocumentMoniker": "C:\\Users\\alodi\\OneDrive\\\uBB38\uC11C\\KYS\\2.STUDY\\1.UNIVERSITY\\wk\\git\\UNIV_Data-Structure\\Data_Structure\\201910936 \uAE40\uC5F0\uC218\\201910936\\pointer.cpp",
+              "RelativeDocumentMoniker": "pointer.cpp",
+              "ToolTip": "C:\\Users\\alodi\\OneDrive\\\uBB38\uC11C\\KYS\\2.STUDY\\1.UNIVERSITY\\wk\\git\\UNIV_Data-Structure\\Data_Structure\\201910936 \uAE40\uC5F0\uC218\\201910936\\pointer.cpp",
+              "RelativeToolTip": "pointer.cpp",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwCsAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-19T00:10:05.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\alodi\\OneDrive\\\uBB38\uC11C\\KYS\\2.STUDY\\1.UNIVERSITY\\wk\\git\\UNIV_Data-Structure\\Data_Structure\\201910936 \uAE40\uC5F0\uC218\\201910936\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\alodi\\OneDrive\\\uBB38\uC11C\\KYS\\2.STUDY\\1.UNIVERSITY\\wk\\git\\UNIV_Data-Structure\\Data_Structure\\201910936 \uAE40\uC5F0\uC218\\201910936\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-12T00:41:13.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-12T00:41:13.228Z"
             }
           ]
         }
