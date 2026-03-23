@@ -1,30 +1,41 @@
 #include "week3.h"
 
-#include <stdio.h>
-#include <string.h>
+#include <common.h>
 
-#define true 1
-#define false 0
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 const int WEEK3_START  = 0;
 const int WEEK3_END    = 7;
 
 // forward declare
-int factorial(int val);
+const int menu();
+const int operate(const int);
+int factorial(int);
 
-const int hasKey(const int key)
+static const int hasKey(const int key)
 {
     if (key >= WEEK3_START && key <= WEEK3_END) return true;
     else return false;
 }
 
-void pointer()
+void week3()
 {
-    int key = -1;
+    const int* key = menu();
 
-    printf("Exercise Week 3\n\n");
+    while (operate(key) == true)
+    {
+        key = menu();
+    }
 
-    printf("============================\n");
+    return;
+}
+
+static const int menu()
+{
+    line();
+
     printf("#0 : Exit\n");
     printf("#1 : Integer Pointer\n");
     printf("#2 : Char Pointer\n");
@@ -33,11 +44,10 @@ void pointer()
     printf("#5 : Student Array\n");
     printf("#6 : Struct Definition\n");
     printf("#7 : Factorial Function\n");
-    printf("============================\n\n");
 
-    printf("Enter Exercise Number : ");
-    scanf_s("%d", &key);
+    line();
 
+    int key = getInt("Exercise Number");
 
     while (hasKey(key) == false)
     {
@@ -45,20 +55,27 @@ void pointer()
         scanf_s("%d", &key);
     }
 
+    return key;
+}
+
+static const int operate(const int key)
+{
+    line();
+
     switch (key)
     {
     case 0:
     {
         printf("Terminating Program ... Good Bye !");
     }
-        return;
+    return false;
 
     case 1:
     {
         int pointedInt = 100;
         int* pointerInt = &pointedInt;
 
-        printf("Pointed : %d\t Address : %p", *pointerInt, &pointedInt);
+        printf("Pointed : %d\t Address : %p\n", *pointerInt, &pointedInt);
     }
     break;
 
@@ -67,23 +84,33 @@ void pointer()
         char pointedChar[3][10] = { "Dreams", "Come", "True!" };
         const char* pointerChar[3] = { {"Dreams"}, {"Come"}, {"True!"} };
 
-        char* cacheChar[4][50];
+        char* cacheChar[4];
 
         for (int i = 0; i < 4; i++)
         {
-            printf("#%d\t :", i + 1);
-            scanf_s("%s", cacheChar[i], 50);
+            cacheChar[i] = (char*)malloc(BUFFER_SIZE * sizeof(char));
+
+            printf("#%d\t : ", i + 1);
+            scanf_s("%s", cacheChar[i], BUFFER_SIZE);
         }
+
+        line();
+
+        printf("Saved As ... \n");
+
+        for (int i = 0; i < 4; i++)
+        {
+            printf("#%d\t : %s\n", i + 1, cacheChar[i]);
+        }
+
     }
     break;
 
     case 3:
     {
-        char inputString[50];
-        printf("Enter String : ");
-        scanf_s("%s", inputString, 50);
-
-        printf("String Size : %d", strlen(inputString));
+        char* inputString = getChar("String", BUFFER_SIZE);
+        printf("String Size\t: %d\n", strlen(inputString));
+        free(inputString);
     }
     break;
 
@@ -124,7 +151,7 @@ void pointer()
     {
         char inputArray[2][3][50];  // each data can contain up to 50
 
-        for (int x  = 0; x < 2; x++)
+        for (int x = 0; x < 2; x++)
         {
             for (int y = 0; y < 3; y++)
             {
@@ -136,7 +163,7 @@ void pointer()
                 case 1: currentIndex = "major"; break;
                 case 2: currentIndex = "student id"; break;
                 }
-                printf("Student #%d's %s : ", x+1, currentIndex);
+                printf("Student #%d's %s : ", x + 1, currentIndex);
                 scanf_s("%s", inputArray[x][y], 50);
             }
         }
@@ -154,7 +181,7 @@ void pointer()
                 case 2: currentIndex = "student id"; break;
                 }
 
-                printf("Student #%d's %s : %s\n", x+1, currentIndex, inputArray[x][y]);
+                printf("Student #%d's %s : %s\n", x + 1, currentIndex, inputArray[x][y]);
             }
         }
     }
@@ -169,7 +196,7 @@ void pointer()
         };
 
         struct employee slave = { "poor-guy", 100, 2000000 };
-        printf("struct employee name : %s year : %d pay : %d", slave.name, slave.year, slave.pay);
+        printf("struct employee Initialized\nname\t: %s\nyear\t: %d\npay\t: %d\n", slave.name, slave.year, slave.pay);
     }
     break;
 
@@ -191,6 +218,10 @@ void pointer()
         break;
 
     }
+
+    line();
+
+    return true;
 }
 
 int factorial(int val)

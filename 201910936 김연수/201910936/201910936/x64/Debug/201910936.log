@@ -1,12 +1,23 @@
 ﻿  week3.c
-C:\Users\alodi\OneDrive\문서\KYS\2.STUDY\1.UNIVERSITY\wk\git\UNIV_Data-Structure\Data_Structure\201910936 김연수\201910936\week3.c(75,21): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'char **'
-      C:\Users\alodi\OneDrive\문서\KYS\2.STUDY\1.UNIVERSITY\wk\git\UNIV_Data-Structure\Data_Structure\201910936 김연수\201910936\week3.c(75,21):
-      this argument is used by a conversion specifier
+D:\wk\GIT\PERSONAL\UNIVERSITY\DATA-STRUCTURE\201910936 김연수\201910936\include\common.h(18,2): warning C4091: 'typedef ': ignored on left of 'week' when no variable is declared
+  (compiling source file '../week3/week3.c')
   
-C:\Users\alodi\OneDrive\문서\KYS\2.STUDY\1.UNIVERSITY\wk\git\UNIV_Data-Structure\Data_Structure\201910936 김연수\201910936\week3.c(86,16): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
-      C:\Users\alodi\OneDrive\문서\KYS\2.STUDY\1.UNIVERSITY\wk\git\UNIV_Data-Structure\Data_Structure\201910936 김연수\201910936\week3.c(86,16):
+D:\wk\GIT\PERSONAL\UNIVERSITY\DATA-STRUCTURE\201910936 김연수\week3\week3.c(27,20): warning C4047: 'function': 'const int' differs in levels of indirection from 'const int *'
+D:\wk\GIT\PERSONAL\UNIVERSITY\DATA-STRUCTURE\201910936 김연수\week3\week3.c(27,20): warning C4024: 'operate': different types for formal and actual parameter 1
+D:\wk\GIT\PERSONAL\UNIVERSITY\DATA-STRUCTURE\201910936 김연수\week3\week3.c(29,13): warning C4047: '=': 'const int *' differs in levels of indirection from 'const int'
+D:\wk\GIT\PERSONAL\UNIVERSITY\DATA-STRUCTURE\201910936 김연수\week3\week3.c(25,16): warning C4047: 'initializing': 'const int *' differs in levels of indirection from 'const int'
+D:\wk\GIT\PERSONAL\UNIVERSITY\DATA-STRUCTURE\201910936 김연수\week3\week3.c(112,16): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+      D:\wk\GIT\PERSONAL\UNIVERSITY\DATA-STRUCTURE\201910936 김연수\week3\week3.c(112,16):
       consider using '%zd' in the format string
   
-  week2.c
+  common.c
+D:\wk\GIT\PERSONAL\UNIVERSITY\DATA-STRUCTURE\201910936 김연수\201910936\include\common.h(18,2): warning C4091: 'typedef ': ignored on left of 'week' when no variable is declared
+  (compiling source file 'src/common.c')
+  
+D:\wk\GIT\PERSONAL\UNIVERSITY\DATA-STRUCTURE\201910936 김연수\201910936\src\common.c(40,25): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
+  main.c
+D:\wk\GIT\PERSONAL\UNIVERSITY\DATA-STRUCTURE\201910936 김연수\201910936\include\common.h(18,2): warning C4091: 'typedef ': ignored on left of 'week' when no variable is declared
+  (compiling source file 'src/main.c')
+  
   Generating Code...
-  201910936.vcxproj -> C:\Users\alodi\OneDrive\문서\KYS\2.STUDY\1.UNIVERSITY\wk\git\UNIV_Data-Structure\Data_Structure\201910936 김연수\201910936\x64\Debug\201910936.exe
+  201910936.vcxproj -> D:\wk\GIT\PERSONAL\UNIVERSITY\DATA-STRUCTURE\201910936 김연수\201910936\x64\Debug\201910936.exe
