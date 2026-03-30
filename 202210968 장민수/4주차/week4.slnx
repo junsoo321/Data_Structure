@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="week4_assignment/week4_assignment.vcxproj" />
+  <Project Path="week4_assignment2/week4_assignment2.vcxproj" />
+  <Project Path="week4_assignment3/week4_assignment3.vcxproj" />
+  <Project Path="week4_assignment4/week4_assignment4.vcxproj" />
+</Solution>
