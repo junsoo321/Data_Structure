@@ -34,7 +34,7 @@ void printList(linkedList_h* L)
     {
         printf("%s", p->data);
         p = p->link;
-        if (p != NULL) printf(",");
+        if (p != NULL) printf(", ");
     }
 
     printf(")\n");

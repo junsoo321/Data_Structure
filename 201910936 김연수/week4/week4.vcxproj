@@ -127,12 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CircularLinkedList.h" />
+    <ClInclude Include="DoubleLinkedList.h" />
     <ClInclude Include="exercises.h" />
     <ClInclude Include="InsertedLinkedList.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CircularLinkedList.c" />
+    <ClCompile Include="DoubleLinkedList.c" />
     <ClCompile Include="ex4-1.c" />
     <ClCompile Include="ex4-2.c" />
+    <ClCompile Include="ex4-3.c" />
+    <ClCompile Include="ex4-4.c" />
     <ClCompile Include="InsertLinkedList.c" />
     <ClCompile Include="main.c" />
   </ItemGroup>

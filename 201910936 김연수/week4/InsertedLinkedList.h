@@ -1,13 +1,11 @@
 #pragma once
 
-typedef struct ListNode
-{
+typedef struct ListNode {
     char data[4];
     struct ListNode* link;
 } listNode;
 
-typedef struct
-{
+typedef struct {
     listNode* head;
 } linkedList_h;
 

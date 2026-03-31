@@ -7,10 +7,15 @@
 
 int ex4_1(void)
 {
+    printf("\n");
+    printf("=============================\n");
+    printf("\tExercise #1\n");
+    printf("=============================\n");
+
     linkedList_h* L;
     L = createLinkedList_h();
 
-    printf("(1) Generating New Linked List\n");
+    printf("\n(1) Generating New Linked List\n");
     printList(L);
 
     printf("\n(2) Insert New Node (Wed)\n");
@@ -29,7 +34,7 @@ int ex4_1(void)
     freeLinkedList_h(L);
     printList(L);
     
-    printf("Press Any Key ...");
+    printf("\nPress Any Key ...");
     getchar();
 
     return 0;
