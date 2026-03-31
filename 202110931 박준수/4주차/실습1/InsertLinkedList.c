@@ -27,7 +27,8 @@ void printList(linkedList_h* L) {
 	while (p != NULL) {
 		printf("%s", p->data);
 		p = p->link;
-		if (p != NULL) printf(", ");
+		if (p != NULL)
+			printf(", ");
 	}
 	printf(") \n");
 }
@@ -69,6 +70,7 @@ void insertLastNode(linkedList_h* L, const char* x) {
 		return;
 	}
 	temp = L->head;
-	while (temp->link != NULL) temp = temp->link;
+	while (temp->link != NULL)
+		temp = temp->link;
 	temp->link = newNode;
 }
