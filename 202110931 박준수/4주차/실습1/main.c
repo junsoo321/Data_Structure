@@ -24,5 +24,6 @@ int main(void) {
 	freeLinkedList_h(L);
 	printList(L);
 
-	getchar();  return 0;
+	getchar();  
+	return 0;
 }
