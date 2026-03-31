@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <string.h>
 #include <stdlib.h>
-#include "InsertLinkedList.h"
+#include "LinkedList.h"
 
 linkedList_h* createLinkedList_h(void) {
 	linkedList_h* L;
@@ -27,7 +27,8 @@ void printList(linkedList_h* L) {
 	while (p != NULL) {
 		printf("%s", p->data);
 		p = p->link;
-		if (p != NULL) printf(", ");
+		if (p != NULL) 
+			printf(", ");
 	}
 	printf(") \n");
 }
@@ -69,19 +70,22 @@ void insertLastNode(linkedList_h* L, const char* x) {
 		return;
 	}
 	temp = L->head;
-	while (temp->link != NULL) temp = temp->link;
+	while (temp->link != NULL)
+		temp = temp->link;
 	temp->link = newNode;
 }
 
 void deleteNode(linkedList_h* L, listNode* p) {
 	listNode* pre;
-	if (L->head == NULL) return;
+	if (L->head == NULL)
+		return;
 	if (L->head->link == NULL) { 
 		free(L->head);			
 		L->head = NULL;			
 		return;
 	}
-	else if (p == NULL) return;		
+	else if (p == NULL)
+		return;		
 	else {
 		pre = L->head;
 		while (pre->link != p) {
@@ -96,8 +100,10 @@ listNode* searchNode(linkedList_h* L, const char* x) {
 	listNode* temp;
 	temp = L->head;
 	while (temp != NULL) {
-		if (strcmp(temp->data, x) == 0) return temp;
-		else temp = temp->link;
+		if (strcmp(temp->data, x) == 0)
+			return temp;
+		else
+			temp = temp->link;
 	}
 	return temp;
 }
