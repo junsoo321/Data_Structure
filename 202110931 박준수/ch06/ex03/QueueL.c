@@ -15,10 +15,10 @@ int isEmpty(queue* que) {
 }
 
 void errorPrint() {
-	printf("Circular Queue is Empty!");
+	printf("Linked Queue is Empty!");
 }
 
-void addQueue(queue* que, char* c) {
+void push_back(queue* que, char* c) {
 	queuetype* newnode = (queuetype*)malloc(sizeof(queuetype));
 	newnode->data = c;
 	newnode->link = NULL;
