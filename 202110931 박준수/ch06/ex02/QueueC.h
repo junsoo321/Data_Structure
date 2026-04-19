@@ -9,7 +9,7 @@ typedef struct queue {
 queue* cQueue(void);
 int isEmpty(queue* que);
 int isFull(queue* que);
-void addQueue(queue* que, char* c);
+void push_back(queue* que, char* c);
 char popQueue(queue* que);
 char peekQueue(queue* que);
 void pQueue(queue* que);
