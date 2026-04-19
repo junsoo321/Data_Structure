@@ -11,7 +11,7 @@ typedef struct {
 
 queue* cQueue(void);
 int isEmpty(queue* que);
-void addQueue(queue* que, char* c);
+void push_back(queue* que, char* c);
 char popQueue(queue* que);
 char peekQueue(queue* que);
 void pQueue(queue* que);
