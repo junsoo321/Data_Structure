@@ -24,7 +24,7 @@ void errorPrint(char c) {
 		printf("Circular Queue is Empty!");
 }
 
-void addQueue(queue* que, char* c) {
+void push_back(queue* que, char* c) {
 	if (isFull(que)) {
 		errorPrint('f');
 		return;
