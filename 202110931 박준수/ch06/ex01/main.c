@@ -7,17 +7,17 @@ int main(void) {
 	queue* que = cQueue();
 	
 	printf("삽입 A >> ");
-	addQueue(que, 'A');
+	push_back(que, 'A');
 	pQueue(que);
 	printf("\n");
 
 	printf("삽입 B >> ");
-	addQueue(que, 'B');
+	push_back(que, 'B');
 	pQueue(que);
 	printf("\n");
 
 	printf("삽입 C >> ");
-	addQueue(que, 'C');
+	push_back(que, 'C');
 	pQueue(que);
 
 	printf("peek item:%c\n\n",peekQueue(que));
@@ -38,12 +38,12 @@ int main(void) {
 	printf("\t삭제 데이터:%c\n", c);
 
 	printf("삽입 D >> ");
-	addQueue(que, 'D');
+	push_back(que, 'D');
 	pQueue(que);
 	printf("\n");
 
 	printf("삽입 E >> ");
-	addQueue(que, 'E');
+	push_back(que, 'E');
 	printf("\n\t");
 	pQueue(que);
 	printf("\n");
