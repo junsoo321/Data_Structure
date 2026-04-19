@@ -19,12 +19,12 @@ int isFull(queue* que) {
 
 void errorPrint(char c) {
 	if (c=='f')
-		printf("Queue is FULL!");
+		printf("Queue is FULL!\n");
 	else
-		printf("Queue is Empty!");
+		printf("Queue is Empty!\n");
 }
 
-void addQueue(queue* que, char* c) {
+void push_back(queue* que, char* c) {
 	if (isFull(que)) {
 		errorPrint('f');
 		return;
