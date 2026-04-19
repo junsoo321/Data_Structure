@@ -19,9 +19,9 @@ int isFull(queue* que) {
 
 void errorPrint(char c) {
 	if (c=='f')
-		printf("Queue is FULL!\n");
+		printf("Queue is FULL!");
 	else
-		printf("Queue is Empty!\n");
+		printf("Queue is Empty!");
 }
 
 void push_back(queue* que, char* c) {
